@@ -13,7 +13,7 @@ const path = require("path");
 const _dirname = path.resolve();
 
 const corsOption = {
-    origin: 'http://localhost:5173',
+    origin: 'https://mithuninfo.vercel.app',
     methods: "GET, POST, PUT, DELETE, HEAD, PATCH",
     credentials: true,
 };
