@@ -37,8 +37,8 @@ app.get('*', (_, res) =>{
 app.use(errorMiddleware);
 
 connectDatabase().then(() =>{
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
     app.listen(port, () => {
-        console.log(`Server Runinig on ${port}`);
+        console.log(`Health check server is running on port ${port}`);
     });
 });
